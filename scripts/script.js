@@ -3,7 +3,7 @@ const grid = document.querySelector('.grid');
 
 for (let i = 0; i<NUM_OF_SQUARES; i++) {
     const div = document.createElement('div');
-    grid.appendChild('div';
+    grid.appendChild(div);
 
 }
 
