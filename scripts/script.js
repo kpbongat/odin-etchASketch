@@ -1,4 +1,4 @@
-const NUM_OF_SQUARES = 16;
+const NUM_OF_SQUARES = 16 * 16;
 const grid = document.querySelector('.grid');
 
 for (let i = 0; i<NUM_OF_SQUARES; i++) {
