@@ -1,7 +1,10 @@
 const grid = document.querySelector('.grid');
 const drawButton = document.querySelector('button')
 drawButton.addEventListener('click', ()=>{
-    let numRows = prompt('Enter number of squares per side');
+    let numRows = prompt('Enter number of squares per side to a maximum of 100.');
+    if (numRows>100){
+        numRows = 100;
+    }
     let numBoxes = numRows;
     const gridChildren = document.querySelectorAll('.row')
     for (const i of gridChildren) {
