@@ -6,7 +6,9 @@
 }
 .grid {
     display:flex;
+    flex-direction: column;
 }
+
 
 .grid div .hover {
     background-color: black;
