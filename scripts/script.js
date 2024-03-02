@@ -1,21 +1,21 @@
 const NUM_OF_ROWS = 16;
-const NUM_OF_COLUMNS = 16;
+const NUM_OF_BOXES = 16;
 const grid = document.querySelector('.grid');
 
 for (let x = 0; x<NUM_OF_ROWS; x++) {
     const rowDiv = document.createElement('div');
     rowDiv.classList.toggle('row');
-    for (let y = 0; y<NUM_OF_COLUMNS; y++){
-        const columnDiv = document.createElement('div');
-        columnDiv.classList.toggle('column');
-        columnDiv.addEventListener('mouseenter',(e)=>{
+    for (let y = 0; y<NUM_OF_BOXES; y++){
+        const boxDiv = document.createElement('div');
+        boxDiv.classList.toggle('box');
+        boxDiv.addEventListener('mouseenter',(e)=>{
             e.target.classList.add('hover')
         });
         rowDiv.addEventListener('mouseenter',(e)=>{
             e.target.classList.add('hover')
         });
 
-        rowDiv.appendChild(columnDiv);
+        rowDiv.appendChild(boxDiv);
     }
     grid.appendChild(rowDiv);
 
