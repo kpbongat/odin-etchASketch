@@ -4,8 +4,10 @@ const grid = document.querySelector('.grid');
 
 for (let x = 0; x<NUM_OF_ROWS; x++) {
     const rowDiv = document.createElement('div');
+    rowDiv.classList.toggle('row');
     for (let y = 0; y<NUM_OF_COLUMNS; y++){
         const columnDiv = document.createElement('div');
+        columnDiv.classList.toggle('column');
         rowDiv.appendChild(columnDiv);
     }
     grid.appendChild(rowDiv);
