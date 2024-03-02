@@ -11,15 +11,10 @@ for (let x = 0; x<NUM_OF_ROWS; x++) {
         columnDiv.addEventListener('mouseenter',(e)=>{
             e.target.classList.toggle('hover')
         });
-        columnDiv.addEventListener('mouseleave',(e)=>{
-            e.target.classList.toggle('hover')
-        });
         rowDiv.addEventListener('mouseenter',(e)=>{
             e.target.classList.toggle('hover')
         });
-        rowDiv.addEventListener('mouseleave',(e)=>{
-            e.target.classList.toggle('hover')
-        });
+
         rowDiv.appendChild(columnDiv);
     }
     grid.appendChild(rowDiv);
