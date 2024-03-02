@@ -11,7 +11,7 @@ for (let x = 0; x<NUM_OF_ROWS; x++) {
         boxDiv.addEventListener('mouseenter',(e)=>{
             e.target.classList.add('hover')
         });
-        rowDiv.addEventListener('mouseenter',(e)=>{
+        boxDiv.addEventListener('mouseenter',(e)=>{
             e.target.classList.add('hover')
         });
 
