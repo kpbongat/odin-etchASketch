@@ -1,11 +1,15 @@
-const NUM_OF_ROWS = 16;
-const NUM_OF_BOXES = 16;
 const grid = document.querySelector('.grid');
-
-for (let x = 0; x<NUM_OF_ROWS; x++) {
+const drawButton = document.querySelector('button')
+drawButton.addEventListener('click', ()=>{
+    let numRows = prompt('Enter number of squares per side');
+    let numBoxes = numRows;
+    drawGrid(numRows,numBoxes)
+})
+function drawGrid(numRows,numBoxes) {
+for (let x = 0; x<numRows; x++) {
     const rowDiv = document.createElement('div');
     rowDiv.classList.toggle('row');
-    for (let y = 0; y<NUM_OF_BOXES; y++){
+    for (let y = 0; y<numBoxes; y++){
         const boxDiv = document.createElement('div');
         boxDiv.classList.toggle('box');
         boxDiv.addEventListener('mouseenter',(e)=>{
@@ -20,4 +24,7 @@ for (let x = 0; x<NUM_OF_ROWS; x++) {
     grid.appendChild(rowDiv);
 
 }
+}
+
+
 
