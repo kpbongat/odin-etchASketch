@@ -3,9 +3,14 @@ const drawButton = document.querySelector('button')
 drawButton.addEventListener('click', ()=>{
     let numRows = prompt('Enter number of squares per side');
     let numBoxes = numRows;
+    const gridChildren = document.querySelectorAll('.row')
+    for (const i of gridChildren) {
+        grid.removeChild(i)
+    }
     drawGrid(numRows,numBoxes)
 })
 function drawGrid(numRows,numBoxes) {
+
 for (let x = 0; x<numRows; x++) {
     const rowDiv = document.createElement('div');
     rowDiv.classList.toggle('row');
