@@ -9,10 +9,10 @@ for (let x = 0; x<NUM_OF_ROWS; x++) {
         const columnDiv = document.createElement('div');
         columnDiv.classList.toggle('column');
         columnDiv.addEventListener('mouseenter',(e)=>{
-            e.target.classList.toggle('hover')
+            e.target.classList.add('hover')
         });
         rowDiv.addEventListener('mouseenter',(e)=>{
-            e.target.classList.toggle('hover')
+            e.target.classList.add('hover')
         });
 
         rowDiv.appendChild(columnDiv);
